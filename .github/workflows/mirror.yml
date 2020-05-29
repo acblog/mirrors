@@ -15,7 +15,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Push image
-      if: github.event_name == 'push'
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -30,7 +29,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Push image
-      if: github.event_name == 'push'
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
@@ -45,7 +43,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
     - name: Push image
-      if: github.event_name == 'push'
       uses: docker/build-push-action@v1
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
