@@ -1,0 +1,1 @@
+FROM acblog/client:latest
